@@ -1,6 +1,12 @@
 $(document).ready(function() {
+  var food;
+  var suggestion = "";
+  var displySuggestion = function() {
+    $("#suggestion").show()
+    $("#suggest-text").text("You might consider the " + suggestion + " track. Once you get a job, you can eat all the " + food + " that you want!");
+  }
   $("form").submit(function() {
-    var food = $("input#food").val();
+    food = $("input#food").val();
     var isChecked1 = $("input:radio[name=question1]:checked").val();
     var isChecked2 = $("input:radio[name=question2]:checked").val();
     var isChecked3 = $("input:radio[name=question3]:checked").val();
@@ -10,7 +16,6 @@ $(document).ready(function() {
     var netPoints = 0;
     var railsPoints = 0;
     var drupalPoints = 0;
-
     if (!isChecked1 || !isChecked2 || !isChecked3 || !isChecked4 || !food) {
       alert("fill in every field!");
     } else {
@@ -23,7 +28,6 @@ $(document).ready(function() {
         designPoints += 2;
         drupalPoints += 1;
       }
-
       if (isChecked2 === "answer1") {
         netPoints += 1;
         drupalPoints += 1;
@@ -34,7 +38,6 @@ $(document).ready(function() {
         designPoints += 1;
         railsPoints += 1;
       }
-
       if (isChecked3 === "answer1") {
         netPoints +=2;
       } else if (isChecked3 === "answer2") {
@@ -45,7 +48,6 @@ $(document).ready(function() {
       } else {
         designPoints += 2;
       }
-
       if (isChecked4 === "answer1") {
         netPoints += 1;
         railsPoints += 1;
@@ -54,27 +56,19 @@ $(document).ready(function() {
       } else {
         designPoints += 1;
       }
-
       if (designPoints >= netPoints && designPoints >= railsPoints && designPoints >= drupalPoints && designPoints >= androidPoints) {
-        $("#suggestion").show()
-        $("#suggest-text").text("You might consider the CSS/Design track. Once you get a job, you can eat all the " + food + " that you want!");
+        suggestion = "CSS/Design";
       } else if (netPoints >= designPoints && netPoints >= railsPoints && netPoints >= drupalPoints && netPoints >= androidPoints) {
-        $("#suggestion").show()
-        $("#suggest-text").text("You might consider the C#/.NET track. Once you get a job, you can eat all the " + food + " that you want!");
+        suggestion = "C#/.NET";
       } else if (railsPoints >= designPoints && railsPoints >= netPoints && railsPoints >= drupalPoints && railsPoints >= androidPoints) {
-        $("#suggestion").show()
-        $("#suggest-text").text("You might consider the Ruby/Rails track. Once you get a job, you can eat all the " + food + " that you want!");
+        suggestion = "Ruby/Rails";
       } else if (drupalPoints >= designPoints && drupalPoints >= netPoints && drupalPoints >= railsPoints && drupalPoints >= androidPoints) {
-        $("#suggestion").show()
-        $("#suggest-text").text("You might consider the PHP/Drupal track. Once you get a job, you can eat all the " + food + " that you want!");
+        suggestion = "PHP/Drupal";
       } else {
-        $("#suggestion").show()
-        $("#suggest-text").text("You might consider the Java/Android track. Once you get a job, you can eat all the " + food + " that you want!");
+        suggestion = "Java/Android";
       }
     }
-
-
-
+    displySuggestion();
     event.preventDefault();
   });
 
