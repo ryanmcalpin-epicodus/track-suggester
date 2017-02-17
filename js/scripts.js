@@ -9,7 +9,7 @@ $(document).ready(function() {
   var food;
   var suggestion = "";
   $("form").submit(function() {
-    food = $("input#food").val();
+    food = $("input#food").val().toLowerCase();
     var isChecked1 = $("input:radio[name=question1]:checked").val();
     var isChecked2 = $("input:radio[name=question2]:checked").val();
     var isChecked3 = $("input:radio[name=question3]:checked").val();

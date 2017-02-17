@@ -12,6 +12,9 @@ button {
   font-size: 23px;
   text-align: center;
   border: 10px solid #cc0000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 .jumbotron {
   background-color: white;
@@ -25,4 +28,5 @@ img {
 }
 #suggest-text {
   margin: 0px;
+  font-weight: bold;
 }
