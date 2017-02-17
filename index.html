@@ -13,89 +13,97 @@
         <h1>Track Suggester</h1>
         <p>Find out which Epicodus track is right for you.</p>
       </div>
-      <form>
-        <h3>You would rather...</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="answer1">
-            make things work.
-          </label>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form>
+            <h3>You would rather...</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question1" value="answer1">
+                make things work.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question1" value="answer2">
+                make things look pretty.
+              </label>
+            </div>
+
+            <h3>Where do you see yourself working?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question2" value="answer1">
+                Large company
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question2" value="answer2">
+                Startup
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question2" value="answer3">
+                Independently from home
+              </label>
+            </div>
+
+            <h3>What would you like to develop?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question3" value="answer1">
+                Business Software
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question3" value="answer2">
+                Apps
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question3" value="answer3">
+                Websites
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question3" value="answer4">
+                I just want to make things pretty!
+              </label>
+            </div>
+
+            <h3>What do you enjoy more?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question4" value="answer1">
+                Math, logic, and puzzles
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question4" value="answer2">
+                Art and design
+              </label>
+            </div>
+
+            <label for="food"><h3>What's your favorite food?</h3></label>
+            <input id="food" type="text" class="form-control">
+
+            <button type="submit" class="btn btn-primary">Suggest!</button>
+          </form>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="answer2">
-            make things look pretty.
-          </label>
+      </div>
+
+
+      <div class="panel panel-default" id="suggestion">
+        <div class="panel-body">
+          <p id="suggest-text">This is the suggestion.</p>
         </div>
 
-        <h3>Where do you see yourself working?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="answer1">
-            Large company
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="answer2">
-            Startup
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="answer3">
-            Independently from home
-          </label>
-        </div>
-
-        <h3>What would you like to develop?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="answer1">
-            Business Software
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="answer2">
-            Apps
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="answer3">
-            Websites
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="answer4">
-            I just want to make things pretty!
-          </label>
-        </div>
-
-        <h3>What do you enjoy more?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="answer1">
-            Math, logic, and puzzles
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="answer2">
-            Art and design
-          </label>
-        </div>
-
-        <label for="food"><h3>What's your favorite food?</h3></label>
-        <input id="food" type="text" class="form-control">
-
-        <button type="submit" class="btn btn-primary">Suggest!</button>
-      </form>
-
-      <div id="suggestion">
-        <p>This is the suggestion.</p>
       </div>
     </div>
   </body>

@@ -1,4 +1,11 @@
+body {
+  background-image: url(../img/wood.jpg);
+}
+button {
+  margin-top: 20px;
+  width: 300px;
+}
 #suggestion {
   display: none;
-  font-size: 20px;
+  font-size: 25px;
 }

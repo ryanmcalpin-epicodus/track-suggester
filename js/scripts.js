@@ -56,15 +56,20 @@ $(document).ready(function() {
       }
 
       if (designPoints >= netPoints && designPoints >= railsPoints && designPoints >= drupalPoints && designPoints >= androidPoints) {
-        $("#suggestion").show().text("You might consider the CSS/Design track. Once you get a job, you can eat all the " + food + " that you want!");
+        $("#suggestion").show()
+        $("#suggest-text").text("You might consider the CSS/Design track. Once you get a job, you can eat all the " + food + " that you want!");
       } else if (netPoints >= designPoints && netPoints >= railsPoints && netPoints >= drupalPoints && netPoints >= androidPoints) {
-        $("#suggestion").show().text("You might consider the C#/.NET track. Once you get a job, you can eat all the " + food + " that you want!");
+        $("#suggestion").show()
+        $("#suggest-text").text("You might consider the C#/.NET track. Once you get a job, you can eat all the " + food + " that you want!");
       } else if (railsPoints >= designPoints && railsPoints >= netPoints && railsPoints >= drupalPoints && railsPoints >= androidPoints) {
-        $("#suggestion").show().text("You might consider the Ruby/Rails track. Once you get a job, you can eat all the " + food + " that you want!");
+        $("#suggestion").show()
+        $("#suggest-text").text("You might consider the Ruby/Rails track. Once you get a job, you can eat all the " + food + " that you want!");
       } else if (drupalPoints >= designPoints && drupalPoints >= netPoints && drupalPoints >= railsPoints && drupalPoints >= androidPoints) {
-        $("#suggestion").show().text("You might consider the PHP/Drupal track. Once you get a job, you can eat all the " + food + " that you want!");
+        $("#suggestion").show()
+        $("#suggest-text").text("You might consider the PHP/Drupal track. Once you get a job, you can eat all the " + food + " that you want!");
       } else {
-        $("#suggestion").show().text("You might consider the Java/Android track. Once you get a job, you can eat all the " + food + " that you want!");
+        $("#suggestion").show()
+        $("#suggest-text").text("You might consider the Java/Android track. Once you get a job, you can eat all the " + food + " that you want!");
       }
     }
 
