@@ -8,7 +8,7 @@ $(document).ready(function() {
    });
   var food;
   var suggestion = "";
-  $("form").submit(function() {
+  $("form").submit(function(event) {
     food = $("input#food").val().toLowerCase();
     var isChecked1 = $("input:radio[name=question1]:checked").val();
     var isChecked2 = $("input:radio[name=question2]:checked").val();
@@ -73,6 +73,6 @@ $(document).ready(function() {
       displySuggestion();
     }
     window.scrollTo(0, document.body.scrollHeight);
-    event.preventDefault();
+    event.preventDefault(event);
   });
 });
