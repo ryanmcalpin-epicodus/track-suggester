@@ -20,7 +20,7 @@ $(document).ready(function() {
         railsPoints += 1;
         drupalPoints += 1;
       } else {
-        designPoints += 1;
+        designPoints += 2;
         drupalPoints += 1;
       }
 
@@ -36,12 +36,12 @@ $(document).ready(function() {
       }
 
       if (isChecked3 === "answer1") {
-        netPoints +=1;
+        netPoints +=2;
       } else if (isChecked3 === "answer2") {
-        androidPoints += 1;
+        androidPoints += 2;
       } else if (isChecked3 === "answer3") {
-        railsPoints += 1;
-        drupalPoints += 1;
+        railsPoints += 2;
+        drupalPoints += 2;
       } else {
         designPoints += 2;
       }
@@ -52,19 +52,19 @@ $(document).ready(function() {
         drupalPoints += 1;
         androidPoints += 1;
       } else {
-        designPoints += 2;
+        designPoints += 1;
       }
 
-      if (designPoints > netPoints && designPoints > railsPoints && designPoints > drupalPoints && designPoints > androidPoints) {
+      if (designPoints >= netPoints && designPoints >= railsPoints && designPoints >= drupalPoints && designPoints >= androidPoints) {
         $("#suggestion").show().text("You might consider the Design track. Once you get a job, you can eat all the " + food + " that you want!");
         alert("design: " + designPoints);
-      } else if (netPoints > designPoints && netPoints > railsPoints && netPoints > drupalPoints && netPoints > androidPoints) {
+      } else if (netPoints >= designPoints && netPoints >= railsPoints && netPoints >= drupalPoints && netPoints >= androidPoints) {
         $("#suggestion").show().text("You might consider the .NET track. Once you get a job, you can eat all the " + food + " that you want!");
         alert("net: " + netPoints);
-      } else if (railsPoints > designPoints && railsPoints > netPoints && railsPoints > drupalPoints && railsPoints > androidPoints) {
+      } else if (railsPoints >= designPoints && railsPoints >= netPoints && railsPoints >= drupalPoints && railsPoints >= androidPoints) {
         $("#suggestion").show().text("You might consider the Rails track. Once you get a job, you can eat all the " + food + " that you want!");
         alert("rails: " + railsPoints);
-      } else if (drupalPoints > designPoints && drupalPoints > netPoints && drupalPoints > railsPoints && drupalPoints > androidPoints) {
+      } else if (drupalPoints >= designPoints && drupalPoints >= netPoints && drupalPoints >= railsPoints && drupalPoints >= androidPoints) {
         $("#suggestion").show().text("You might consider the Drupal track. Once you get a job, you can eat all the " + food + " that you want!");
         alert("drupal: " + drupalPoints);
       } else {
