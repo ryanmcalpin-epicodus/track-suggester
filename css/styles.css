@@ -9,3 +9,6 @@ button {
   display: none;
   font-size: 25px;
 }
+.jumbotron {
+  background-color: white;
+}
