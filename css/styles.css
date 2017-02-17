@@ -3,12 +3,22 @@ body {
 }
 button {
   margin-top: 20px;
-  width: 300px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 #suggestion {
   display: none;
-  font-size: 25px;
+  font-size: 23px;
+  text-align: center;
+  border: 10px solid darkred;
 }
 .jumbotron {
   background-color: white;
+}
+
+img {
+  display: block;
+  margin: auto;
+  height: 200px;
 }
