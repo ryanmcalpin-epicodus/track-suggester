@@ -1,10 +1,10 @@
 $(document).ready(function() {
   var displySuggestion = function() {
-    $("#suggestion").show()
+    $("#suggestion").fadeIn()
     $("#suggest-text").text("You might consider the " + suggestion + " track. Once you get a job, you can eat all the " + food + " that you want!");
   }
   $("input[type='radio']").click(function(){
-      $("#suggestion").hide()
+      $("#suggestion").fadeOut();
    });
   var food;
   var suggestion = "";
