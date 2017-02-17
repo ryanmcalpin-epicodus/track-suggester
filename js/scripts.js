@@ -20,7 +20,7 @@ $(document).ready(function() {
     var railsPoints = 0;
     var drupalPoints = 0;
     if (!isChecked1 || !isChecked2 || !isChecked3 || !isChecked4 || !food) {
-      alert("fill in every field!");
+      alert("Please answer all the questions.");
     } else {
       if (isChecked1 === "answer1") {
         androidPoints += 1;
