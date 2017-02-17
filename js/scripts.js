@@ -70,8 +70,9 @@ $(document).ready(function() {
       } else {
         suggestion = "Java/Android";
       }
+      displySuggestion();
     }
-    displySuggestion();
+    window.scrollTo(0, document.body.scrollHeight);
     event.preventDefault();
   });
 });
