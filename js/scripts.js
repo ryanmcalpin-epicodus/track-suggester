@@ -1,10 +1,13 @@
 $(document).ready(function() {
-  var food;
-  var suggestion = "";
   var displySuggestion = function() {
     $("#suggestion").show()
     $("#suggest-text").text("You might consider the " + suggestion + " track. Once you get a job, you can eat all the " + food + " that you want!");
   }
+  $("input[type='radio']").click(function(){
+      $("#suggestion").hide()
+   });
+  var food;
+  var suggestion = "";
   $("form").submit(function() {
     food = $("input#food").val();
     var isChecked1 = $("input:radio[name=question1]:checked").val();
@@ -71,6 +74,4 @@ $(document).ready(function() {
     displySuggestion();
     event.preventDefault();
   });
-
-
 });
