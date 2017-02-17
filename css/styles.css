@@ -11,14 +11,16 @@ button {
   display: none;
   font-size: 23px;
   text-align: center;
-  border: 10px solid darkred;
+  border: 10px solid #cc0000;
 }
 .jumbotron {
   background-color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
 }
-
 img {
   display: block;
   margin: auto;
-  height: 200px;
+  height: 180px;
 }

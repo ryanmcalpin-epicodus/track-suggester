@@ -52,12 +52,12 @@ $(document).ready(function() {
         designPoints += 2;
       }
       if (isChecked4 === "answer1") {
-        netPoints += 1;
-        railsPoints += 1;
-        drupalPoints += 1;
-        androidPoints += 1;
+        netPoints += 2;
+        railsPoints += 2;
+        drupalPoints += 2;
+        androidPoints += 2;
       } else {
-        designPoints += 1;
+        designPoints += 2;
       }
       if (designPoints >= netPoints && designPoints >= railsPoints && designPoints >= drupalPoints && designPoints >= androidPoints) {
         suggestion = "CSS/Design";
