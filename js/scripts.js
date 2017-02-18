@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("#suggestion").fadeIn()
     $("#suggest-text").text("You might consider the " + suggestion + " track. Once you get a job, you can eat all the " + food + " that you want!");
   }
-  $("input[type='radio'] #food").click(function(){
+  $("input").click(function(){
       $("#suggestion").fadeOut();
    });
   var food;
